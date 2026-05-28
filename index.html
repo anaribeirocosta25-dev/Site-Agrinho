@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Fascínio das Flores Rosas | Universo Botânico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accessibility-bar" role="toolbar" aria-label="Ferramentas de Acessibilidade">
+        <button id="btn-contrast" aria-pressed="false">Ativar Alto Contraste</button>
+        <button id="btn-font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btn-font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
+    </div>
 
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo" aria-label="Início da página Universo das Flores Rosas">RosaVibe</a>
+            <nav aria-label="Navegação Principal">
+                <ul class="nav-menu">
+                    <li><a href="#sobre">Significado</a></li>
+                    <li><a href="#galeria">Espécies</a></li>
+                    <li><a href="#faq">Dúvidas Frequentes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-content scroll-reveal">
+                <h1 id="hero-title">A Delicadeza e o Poder das Flores Rosas</h1>
+                <p>Do romantismo à gratidão, descubra o significado, o cultivo e a beleza das espécies mais encantadoras da natureza.</p>
+                <a href="#galeria" class="btn-primary">Explorar Espécies</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section scroll-reveal" aria-labelledby="sobre-title">
+            <div class="container">
+                <h2 id="sobre-title">O que a cor rosa transmite?</h2>
+                <div class="about-grid">
+                    <article class="about-card">
+                        <h3>Gratidão e Afeto</h3>
+                        <p>Tonalidades mais claras de rosa são historicamente utilizadas para expressar admiração profunda, carinho sincero e agradecimento.</p>
+                    </article>
+                    <article class="about-card">
+                        <h3>Amor e Romance</h3>
+                        <p>Diferente do vermelho vibrante da paixão, o rosa evoca o amor poético, a união suave e a empatia mútua.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="gallery-section scroll-reveal" aria-labelledby="gallery-title">
+            <div class="container">
+                <h2 id="gallery-title">Espécies Populares</h2>
+                <p class="section-subtitle">Use os controles abaixo para navegar pelas variedades de flores rosas.</p>
+                
+                <div class="carousel-container">
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track" id="carousel-track" role="region" aria-live="polite" aria-label="Carrossel de flores rosas">
+                            </ul>
+                    </div>
+                    
+                    <div class="carousel-controls">
+                        <button class="carousel-btn btn-prev" id="btn-prev" aria-label="Slide anterior">❮</button>
+                        <button class="carousel-btn btn-next" id="btn-next" aria-label="Próximo slide">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section scroll-reveal" aria-labelledby="faq-title">
+            <div class="container">
+                <h2 id="faq-title">Perguntas Frequentes</h2>
+                <div class="accordion-group" id="faq-accordion">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 RosaVibe. Desenvolvido com foco em Design Universal e Acessibilidade.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
